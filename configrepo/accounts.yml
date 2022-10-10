@@ -1,0 +1,26 @@
+spring:
+  mail:
+    host: smtp.mxhichina.com
+    test-connection: ${mail.enabled}
+    username: ${mail.username}
+    password: ${mail.password}
+    port: 80
+management:
+  endpoints:
+    web:
+      exposure:
+        include: httptrace,info,health
+mail:
+  enabled: true #是否启用邮件服务，true启用，false不启用，而是打印邮件内容到日志中
+  username: xxxxxx
+  password: xxxxxx
+verificationCode:
+  numberCount: 6
+  maxAgeSeconds: 900
+gitlab:
+  id: xxxxxx
+  key: xxxxxx
+info:
+  app:
+    name: wejuai-accounts
+    version: 1.0.0

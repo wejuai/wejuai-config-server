@@ -1,0 +1,12 @@
+server:
+  servlet:
+    session:
+      cookie:
+        domain: wejuai.com
+        path: /
+        http-only: true
+spring:
+  redis:
+    host: xxxxxx
+    database: 0
+    password: xxxxxx

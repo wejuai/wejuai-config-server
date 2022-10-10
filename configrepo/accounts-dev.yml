@@ -1,0 +1,4 @@
+mail:
+  enabled: false
+server:
+  port: 8086

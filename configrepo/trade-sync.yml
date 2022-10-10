@@ -1,0 +1,26 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: httptrace,info,health
+#此页配置和 trade-gateway一致
+trade:
+  alipay:
+    notify-url: https://trade.wejuai.com/notify/alipay
+    id: xxxxxxx
+    app-cert-sn: xxxxxx
+    key: xxxxxx
+  weixin:
+    mch-id: xxxxxx
+    key: xxxxxx
+    notify-url: https://trade.wejuai.com/notify/weixin
+    mini-app:
+      app-id: xxxxxx
+      key: xxxxxxx
+    offi:
+      app-id: xxxxxxx
+      key: xxxxxx
+info:
+  app:
+    name: wejuai-trade-sync
+    version: 1.0.0

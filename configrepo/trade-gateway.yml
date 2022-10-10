@@ -1,0 +1,25 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,httptrace
+trade:
+  alipay:
+    notify-url: https://trade.wejuai.com/notify/alipay
+    id: xxxxxx #支付宝商户号id
+    app-cert-sn: #证书解码后的sn 获取方式在https://github.com/EndOfMaster/commons-java-sdk-alipay/blob/master/src/test/java/com/wejuai/alipay/AlipayClientTest.java#L124
+    key: xxxxxx #证书的内容
+  weixin:
+    mch-id: xxxxxx #商户id(数字的id可能不被识别可以用引号)
+    key: xxxxxx #key
+    notify-url: https://trade.wejuai.com/notify/weixin
+    mini-app:
+      app-id: xxxxxx #小程序 appId
+      key: xxxxxx #小程序 appSecret
+    offi:
+      app-id: xxxxxx #公众号appId
+      key: xxxxxx #公众号 appSecret
+info:
+  app:
+    name: wejuai-trade-getaway
+    version: 1.0.0

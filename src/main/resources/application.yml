@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wejuai/wejuai-config-server.git
+          username: xxxxxx
+          password: xxxxxx
+          search-paths: configrepo
+  application:
+    name: config-server
+server:
+  port: 8080

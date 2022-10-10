@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 8H
+      cookie:
+        max-age: 8H
+management:
+  endpoints:
+    web:
+      exposure:
+        include: httptrace,info,health
+info:
+  app:
+    name: wejuai-console-service
+    version: 1.0.0
+aliyun:
+  oss:
+    imageCallbackUrl: https://console-service.wejuai.com/images/callback
+    videoCallbackUrl: https://console-service.wejuai.com/videos/callback
+    audioCallbackUrl: https://console-service.wejuai.com/audios/callback
+spring:
+  redis:
+    database: 1

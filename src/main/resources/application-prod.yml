@@ -1,0 +1,5 @@
+spring:
+  security:
+    user:
+      name: wejuai
+      password: ${WEJUAI_CONFIG_PASSWORD}
